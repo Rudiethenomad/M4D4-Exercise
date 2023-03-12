@@ -38,7 +38,7 @@ fetch('https://striveschool-api.herokuapp.com/books')
         }
     */
 
-        fetch('https://striveschool-api.herokuapp.com/books')
+    fetch('https://striveschool-api.herokuapp.com/books')
      .then(response => response.json())
      .then(books => {renderBooks(books.results)
      });
@@ -49,25 +49,20 @@ fetch('https://striveschool-api.herokuapp.com/books')
     books.forEach(books => {
       const div = document.createElement('div');
       const image = document.createElement('img');
-      const name = document.createElement('h3');
-      const species = document.createElement('h3');
+      const title = document.createElement('h3');
+      const price = document.createElement('h3');
+      const category = document.createElement('h3');
       const like = document.createElement('button');
       const skip = document.createElementNS('button');
-
       div.classList = 'card'
       image.classList = 'card-img'
       like.classList = 'empty'
-
       image.src = books.image
       asin.innerText = ` asin: ${books.asin}`
       title.innerText = `title: ${books.title}`
       price.innerText = `price: ${books.price}`
-      category.innerText = `category ${books.category}'
-
+      category.innerText = `category: ${books.category}` 
      
-      like.textContent = 'like'
-      skip.textContent = 'Skip'
-      
       div.appendChild(asin)
       div.appendChild(title)
       div.appendChild(image)
@@ -76,8 +71,12 @@ fetch('https://striveschool-api.herokuapp.com/books')
       div.appendChild(like)
       div.appendChild(skip)
       cardsContainer.appendChild(div)
-      })
-     };
+      like.textContent = 'like'
+      skip.textContent = 'Skip'
 
+    });
+};
+    
 
+    
 

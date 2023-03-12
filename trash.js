@@ -209,3 +209,11 @@ window.addEventListener("DOMContentLoaded", () => {
       console.log("SUMMED IDs WITH REDUCE", reducedIds);
     });
 });
+
+
+
+const books = this.el.parentElement;
+
+[...parent.children].forEach(child => {
+  console.log(child);
+});
