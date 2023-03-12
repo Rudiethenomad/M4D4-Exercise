@@ -1,42 +1,4 @@
 
-/*
-fetch('https://striveschool-api.herokuapp.com/books')
-.then( response => response.json())
-.then(data => console.log(data));
-*/
-/*
-fetch('https://striveschool-api.herokuapp.com/books')
-.then(function(response){
-    return response.json()
-})
-.then(function(books){
-    console.log(books)
-})
-
-*/
-
-/*
-    fetch("https://striveschool-api.herokuapp.com/books") 
-
-
-      .then((response) => {
-        return response.json();
-      })
-      .then((body) => {
-        let cards = document.getElementsByClassName("card");
-  
-       // for (let i = 0; i < cards.length; i++) {
-          //cards[i].firstElementChild.remove(); //removes svg
-          let img = document.createElement("img");
-          img.src = body.photos[i].src.large;
-          img.className = "bd-placeholder-img card-img-top";
-          img.style = "height: 200px; object-fit: cover";
-  
-          cards[i].insertBefore(img, cards[i].firstChild); //adds the new image before other content
-  
-          
-        }
-    */
 
     fetch('https://striveschool-api.herokuapp.com/books')
      .then(response => response.json())
@@ -77,6 +39,3 @@ fetch('https://striveschool-api.herokuapp.com/books')
     });
 };
     
-
-    
-
