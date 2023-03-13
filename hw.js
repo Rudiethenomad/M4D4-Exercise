@@ -3,7 +3,12 @@
     fetch('https://striveschool-api.herokuapp.com/books')
      .then(response => response.json())
      .then(books => {renderBooks(books.results)
-     });
+        
+     }
+     
+     
+     );
+    
 
   const cardsContainer = document.querySelector("#cards-container");
 
