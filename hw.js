@@ -10,7 +10,7 @@
      );
     
 
-  const cardsContainer = document.querySelector("#cards-container");
+ 
 
   function renderBooks(books) {
     books.forEach(books => {
@@ -44,3 +44,4 @@
     });
 };
     
+const cardsContainer = document.querySelector("#cards-container");
